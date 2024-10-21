@@ -1,0 +1,220 @@
+.movie-apnd{
+    height:100vh;
+    width:99%;
+    border:2px solid;
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+    align-items: center;
+    border: none;
+    
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    border: none;
+    
+}
+#srch{
+    min-width: 40%;
+    max-width: 50%;
+    height:50px;
+    padding: 5px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    border: none;
+    border-radius: 20px; 
+    font-family: sans-serif;
+    box-shadow: 8px 5px 16px  rgb(124, 103, 103);
+    border: none;
+}
+#srch:focus{
+    outline: none;
+    color: black;
+    font-size: 2rem;
+}
+#srch::placeholder{
+    color: black;
+    font-weight: 550;
+}
+.movie-cont{
+    height: 160vh;
+    width:100%;
+    margin-bottom: px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    scrollbar-width:none;
+    border: none;
+
+}
+.div{
+    height: 100px;
+    margin-top: 700px;
+    color: rgb(255, 255, 255);
+    width: auto;
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-direction: column;
+    line-height: 0.5px;
+    border: none;
+
+
+}
+.main{
+    height: 80vh;
+    object-fit: contain;
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top:0px;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    border-radius: 0px;
+    overflow: auto;
+    margin-bottom: 1px;
+    padding: 10px;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    
+}
+img{
+    border-radius: 20px;
+    transition: linear 1s;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    
+}
+h3{
+    color:rgb(211, 0, 0);
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: px;
+    border: none;
+}
+.movie-item{
+    width: 300px;
+    padding-top: 0px;
+    border-radius: 20px;
+    margin: 46px;
+    margin-bottom: 70px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    cursor:pointer;
+    object-fit: cover;
+    border: none;
+    
+}
+.movie-item:hover{
+    background-color: rgb(99, 99, 99);
+}
+#imdb{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+    #srch{
+        width:60vh;
+        font-size: 1.2rem;
+        border-radius: 15px;
+        padding-left:10px ;
+        margin-bottom: -30px;
+        margin-top: 20px;
+        height: 40px;
+    }    
+    #srch:focus{
+        font-size: 1.2rem;
+    }
+    .movie-item{
+        margin-top: 10px;
+        margin-bottom:20px;
+        
+    }
+    .main{
+        height: 85vh;
+        overflow: ;
+        width: 90%;
+        margin:5px;
+    }
+
+}
+#close{
+    height: 60px;
+    margin-top: 50px;
+    border: 2px solid white;
+    width:120px;
+    font-size: 1.8rem;
+    align-items: end;
+    border-radius: 20px;
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: rgb(228, 228, 228);
+    display: block;
+    position: fixed;
+    margin-left: 66%;
+    margin-top: -10px;
+
+}
+#actor{
+    text-align: center;
+    margin-top: 40px;
+}
+#plot{
+    color:yellow;
+    margin-top: 50px;
+    
+}
+#strg{
+    color: rgb(30, 238, 124);
+    font-size: 2rem;
+}
+#details-img{
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.main{
+    display:inline-block;
+}
+#close:hover{
+    background-color: gray;
+    color: rgb(255, 255, 255);
+}
+#dirct{
+    margin-top: 30px;
+}
+#rating{
+    text-decoration:underline gray;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+
+}
+#act{
+    color: green;
+    text-decoration: underline;
+}
+.movie-item:hover{
+    text-decoration: underline 2.5px rgb(0, 0, 0);
+}
